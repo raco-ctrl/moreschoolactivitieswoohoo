@@ -6,15 +6,17 @@
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
+        color: white;
     }
     
     body {
         overflow-x: hidden;
+        background-color: #111;
     }
     
     .quote {
         padding-left: 8px;
-        border-left: 4px black solid;
+        border-left: 4px rgb(255, 255, 255) solid;
         margin-left: 64px;
         max-width: 50vw;
     }
@@ -117,7 +119,7 @@
         margin-top: 1.2rem;
         width: fit-content;
     }
-    
+
     .footer {
         background-color: black;
         width: 100vw;
@@ -163,6 +165,14 @@
     
     .nav-logo {
         margin-left: 20px;
+    }
+
+    .nav-logo img {
+        height: 30px;
+    }
+
+    .link-list {
+        align-content: center;
     }
     
     .fixed {
@@ -237,11 +247,16 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
+
+    .image-list > * {
+        margin: 8px;
+    }
     
     .image-list img {
         width: 16rem;
         height: 100%;
         margin: 0.4rem;
+        box-shadow: 4px 4px rgb(189, 18, 189);
     }
     
     .image-list img:hover {
@@ -282,6 +297,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .container-qa {
+        padding: 16px;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .text-rant {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-rant * {
+        max-width: calc(300px + 60vw);
+    }
+
+    .text-rant br {
+        margin-top: 1rem;
     }
     
     .center-container>div {

@@ -11,6 +11,7 @@
     
     body {
         overflow-x: hidden;
+        clip-path: view-box;
         background-color: #111;
     }
     
@@ -23,7 +24,7 @@
     
     .can-back {
         /* Imatge de fons */
-        background-image: url('/public/img/can\ \(1\).jpg');
+        background-image: url('/img/can\ \(1\).jpg');
         width: 100vw;
         min-height: 600px;
         /* IMPORTANT:
@@ -57,7 +58,7 @@
         width: 100vw;
         min-height: 128px;
         image-rendering: pixelated;
-        background-image: url("/public/img/grid.png");
+        background-image: url("/img/grid.png");
         background-attachment: fixed;
         background-position: center;
         background-repeat: repeat;
@@ -119,7 +120,7 @@
         margin-top: 1.2rem;
         width: fit-content;
     }
-
+    
     .footer {
         background-color: black;
         width: 100vw;
@@ -145,6 +146,7 @@
     
     .footer div {
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem;
         display: flex;
         width: 100vw;
@@ -166,11 +168,11 @@
     .nav-logo {
         margin-left: 20px;
     }
-
+    
     .nav-logo img {
         height: 30px;
     }
-
+    
     .link-list {
         align-content: center;
     }
@@ -201,6 +203,8 @@
             height: auto;
             flex-direction: column-reverse;
             gap: 3rem;
+            padding-left: 3vw;
+            width: calc(100% - (3vw * 2));
         }
         .footer div {
             flex-direction: row;
@@ -247,8 +251,8 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
-
-    .image-list > * {
+    
+    .image-list>* {
         margin: 8px;
     }
     
@@ -298,23 +302,23 @@
         align-items: center;
         justify-content: center;
     }
-
+    
     .container-qa {
         padding: 16px;
         margin-left: 64px;
         margin-right: 64px;
     }
-
+    
     .text-rant {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    
     .text-rant * {
         max-width: calc(300px + 60vw);
     }
-
+    
     .text-rant br {
         margin-top: 1rem;
     }
